@@ -12,6 +12,10 @@ const GlobalStyle = createGlobalStyle`
    margin: 0;
   }
 
+  html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
   ul {
    list-style: none;
    margin: 0;
