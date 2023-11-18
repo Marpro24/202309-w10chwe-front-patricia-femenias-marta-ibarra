@@ -20,4 +20,20 @@ describe("Given an App component", () => {
       expect(title).toBeInTheDocument();
     });
   });
+
+  describe("When it renders a header", () => {
+    test("Then it should show a Killer Robots logo", () => {
+      const expectedAltText = "Killer Robots logo";
+
+      render(
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>,
+      );
+
+      const headerLogo = screen.getByAltText(expectedAltText);
+
+      expect(headerLogo).toBeInTheDocument();
+    });
+  });
 });
