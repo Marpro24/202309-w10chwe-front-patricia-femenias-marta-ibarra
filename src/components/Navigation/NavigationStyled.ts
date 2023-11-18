@@ -7,7 +7,7 @@ const NavigationStyled = styled.nav`
     gap: 30px;
     font-size: 16px;
     font-weight: bold;
-    color: #000;
+    color: ${({ theme }) => theme.colors.main};
     text-transform: uppercase;
     padding: 20px;
     margin: 20px;
@@ -15,7 +15,7 @@ const NavigationStyled = styled.nav`
 
   .active {
     text-decoration: underline;
-    color: #991e14;
+    color: ${({ theme }) => theme.colors.accent};
   }
 `;
 
