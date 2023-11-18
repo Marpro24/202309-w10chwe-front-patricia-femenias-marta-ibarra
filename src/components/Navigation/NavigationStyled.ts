@@ -6,7 +6,8 @@ const NavigationStyled = styled.nav`
     justify-content: center;
     gap: 30px;
     font-size: 16px;
-    color: #991e14;
+    font-weight: bold;
+    color: #000;
     text-transform: uppercase;
     padding: 20px;
     margin: 20px;
@@ -14,7 +15,7 @@ const NavigationStyled = styled.nav`
 
   .active {
     text-decoration: underline;
-    color: #000;
+    color: #991e14;
   }
 `;
 
