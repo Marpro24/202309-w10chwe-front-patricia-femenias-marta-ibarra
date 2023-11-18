@@ -1,11 +1,16 @@
 import { Route, Routes } from "react-router-dom";
-import Homepage from "../pages/Homepage/Homepage";
+import AppStyled from "./App.styled";
 
 const App = (): React.ReactElement => {
   return (
-    <Routes>
-      <Route path="/" element={<Homepage />} />
-    </Routes>
+    <AppStyled>
+      <main>
+        <h2 className="header__title">Killer Robots</h2>
+        <Routes>
+          <Route path="/" />
+        </Routes>
+      </main>
+    </AppStyled>
   );
 };
 
