@@ -13,6 +13,8 @@ const HeaderStyled = styled.header`
     width: 100vw;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
   .header-logo {
     object-fit: cover;

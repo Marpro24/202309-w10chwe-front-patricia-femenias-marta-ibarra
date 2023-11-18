@@ -1,9 +1,10 @@
 import { NavLink } from "react-router-dom";
+import NavigationStyled from "./NavigationStyled";
 
 const Navigation = (): React.ReactElement => {
   return (
-    <nav>
-      <ul>
+    <NavigationStyled>
+      <ul className="navigation">
         <li>
           <NavLink to="/home">home</NavLink>
         </li>
@@ -11,7 +12,7 @@ const Navigation = (): React.ReactElement => {
           <NavLink to="/create">create</NavLink>
         </li>
       </ul>
-    </nav>
+    </NavigationStyled>
   );
 };
 
