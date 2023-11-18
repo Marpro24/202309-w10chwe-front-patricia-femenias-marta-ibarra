@@ -8,7 +8,10 @@ const HeaderStyled = styled.header`
   width: 100%;
 
   .logo-container {
-    background: linear-gradient(to right, #e1281c, #c1b5b4, #e1281c);
+    background: linear-gradient(
+      to right,
+      ${({ theme }) => theme.colors.degraded}
+    );
     display: inline-block;
     width: 100vw;
     display: flex;
@@ -16,6 +19,7 @@ const HeaderStyled = styled.header`
     flex-direction: column;
     align-items: center;
   }
+
   .header-logo {
     object-fit: cover;
     margin-bottom: 20px;

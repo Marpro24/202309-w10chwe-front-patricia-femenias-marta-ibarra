@@ -1,10 +1,10 @@
 declare module "styled components" {
   export interface DefaultTheme {
-    color: {
-      mainColor: string;
-      secondaryColor: string;
-      mainFontColor: string;
-      secondaryFontColor: string;
+    colors: {
+      main: string;
+      accent: string;
+      light: string;
+      degraded: string;
     };
     typography: {
       mainFontFamily: string;

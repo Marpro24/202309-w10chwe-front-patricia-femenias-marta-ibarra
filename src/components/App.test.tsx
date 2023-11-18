@@ -1,6 +1,8 @@
 import { render, screen } from "@testing-library/react";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
+import { ThemeProvider } from "styled-components";
+import mainTheme from "../styles/mainTheme";
 
 describe("Given an App component", () => {
   describe("When it is rendered", () => {
@@ -9,7 +11,9 @@ describe("Given an App component", () => {
 
       render(
         <BrowserRouter>
-          <App />
+          <ThemeProvider theme={mainTheme}>
+            <App />
+          </ThemeProvider>
         </BrowserRouter>,
       );
 
@@ -27,7 +31,9 @@ describe("Given an App component", () => {
 
       render(
         <BrowserRouter>
-          <App />
+          <ThemeProvider theme={mainTheme}>
+            <App />
+          </ThemeProvider>
         </BrowserRouter>,
       );
 

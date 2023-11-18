@@ -1,6 +1,8 @@
 import { render, screen } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
 import Homepage from "./Homepage";
+import { ThemeProvider } from "styled-components";
+import mainTheme from "../../styles/mainTheme";
 
 describe("Given a Homepage component", () => {
   describe("When it receives a heading with the title Killer Robots", () => {
@@ -9,7 +11,9 @@ describe("Given a Homepage component", () => {
 
       render(
         <BrowserRouter>
-          <Homepage />
+          <ThemeProvider theme={mainTheme}>
+            <Homepage />
+          </ThemeProvider>
         </BrowserRouter>,
       );
 
