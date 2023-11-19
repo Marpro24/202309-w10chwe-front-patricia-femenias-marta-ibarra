@@ -1,7 +1,7 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import AppStyled from "./App.styled";
-import Header from "./Header/Header";
-import Homepage from "../pages/Homepage/Homepage";
+import Header from "../Header/Header";
+import Homepage from "../../pages/Homepage/Homepage";
 
 const App = (): React.ReactElement => {
   return (
