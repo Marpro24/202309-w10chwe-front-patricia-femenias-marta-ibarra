@@ -1,8 +1,8 @@
 import { ThemeProvider } from "styled-components";
 import { render, screen } from "@testing-library/react";
 import mainTheme from "../../styles/mainTheme";
-import { robocopMock } from "../../mocks/robotMock";
 import RobotCard from "./RobotCard";
+import { robocopMock } from "../../mocks/robotMock";
 
 describe("Given a RobotCard component", () => {
   describe("When it receives a Robocop robot", () => {
