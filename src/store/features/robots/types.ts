@@ -6,3 +6,7 @@ export interface RobotStructure {
   endurance: number;
   image: string;
 }
+
+export interface RobotsStructure {
+  robots: RobotStructure[];
+}
