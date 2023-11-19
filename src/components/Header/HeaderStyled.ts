@@ -6,32 +6,17 @@ const HeaderStyled = styled.header`
   justify-content: center;
   align-items: center;
   width: 100%;
-
-  .logo-container {
-    background: linear-gradient(
-      to right,
-      ${({ theme }) => theme.colors.degraded}
-    );
-    display: inline-block;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
+  background: linear-gradient(
+    to right,
+    ${({ theme }) => theme.colors.degraded}
+  );
 
   .header-logo {
     object-fit: cover;
     margin-bottom: 20px;
-    width: 360px;
-    height: 220px;
+    width: 308px;
+    height: 288px;
     padding-top: 20px;
-  }
-
-  @media (min-width: 820px) {
-    .header-logo {
-      width: 400px;
-    }
   }
 `;
 
