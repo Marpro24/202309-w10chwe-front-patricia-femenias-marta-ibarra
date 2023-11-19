@@ -1,6 +1,6 @@
 import { RobotStructure } from "../../store/features/robots/types";
 
-export const robot: RobotStructure = {
+export const robotMock: RobotStructure = {
   _id: "39urfio3",
   name: "Robocop",
   movie: "Robocop",
