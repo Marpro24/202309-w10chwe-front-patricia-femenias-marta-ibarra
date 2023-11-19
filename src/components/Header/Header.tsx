@@ -4,16 +4,14 @@ import HeaderStyled from "./HeaderStyled";
 const Header = (): React.ReactElement => {
   return (
     <HeaderStyled>
-      <div className="logo-container">
-        <img
-          className="header-logo"
-          src="/images/logo.webp"
-          alt="Killer Robots logo"
-          width="400"
-          height="4302"
-        />
-        <Navigation />
-      </div>
+      <img
+        className="header-logo"
+        src="/images/logo.webp"
+        alt="Killer Robots logo"
+        width="308"
+        height="288"
+      />
+      <Navigation />
     </HeaderStyled>
   );
 };
