@@ -6,7 +6,7 @@ const useRobotsApi = () => {
   axios.defaults.baseURL = import.meta.env.VITE_API_URL;
 
   const getRobotsApi = useCallback(async () => {
-    const { data: robots } = await axios.get<RobotStructure[]>("/robots?");
+    const { data: robots } = await axios.get<RobotStructure[]>("/robots");
     return robots;
   }, []);
 
