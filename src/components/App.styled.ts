@@ -4,8 +4,6 @@ const AppStyled = styled.main`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-right: 20px;
-  padding-left: 20px;
   align-items: center;
 `;
 
